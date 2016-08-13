@@ -3,7 +3,7 @@ WatchFace for Sunshine
 
 Custom WatchFace made for the Sunshine app for the Wearable Devices.
 
-![WatchFace Preview](/wear/src/main/res/drawable-nodpi/preview_square.jpg?raw=true "Sunshine WatchFace")
+![WatchFace Preview](https://github.com/ankan-anurag/SunshineWatchFace/blob/master/wear/src/main/res/drawable-nodpi/preview_square.png?raw=true "Sunshine WatchFace")
 
 Original ReadMe
 --------------
