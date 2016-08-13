@@ -95,7 +95,6 @@ public class WearableUpdaterService extends IntentService implements GoogleApiCl
                         dataMap.putInt(WeatherContract.WeatherEntry.COLUMN_WEATHER_ID, weatherId);
                         dataMap.putDouble(WeatherContract.WeatherEntry.COLUMN_MAX_TEMP, high);
                         dataMap.putDouble(WeatherContract.WeatherEntry.COLUMN_MIN_TEMP, low);
-                        dataMap.putLong("update", System.currentTimeMillis());
                         putDataMapRequest.setUrgent();
 
                         PutDataRequest putDataRequest = putDataMapRequest.asPutDataRequest();

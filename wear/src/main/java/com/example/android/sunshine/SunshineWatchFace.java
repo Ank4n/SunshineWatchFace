@@ -434,8 +434,8 @@ public class SunshineWatchFace extends CanvasWatchFaceService {
 
             // max and min
             if (highTemp > 0.0 && lowTemp > 0.0 && (!mAmbient || toggler == AMBIENT_TEMPERATURE)) {
-                String high = String.valueOf((int) highTemp) + "°";
-                String low = String.valueOf((int) lowTemp) + "°";
+                String high = String.valueOf(Math.round(highTemp)) + "°";
+                String low = String.valueOf(Math.round(lowTemp)) + "°";
 
                 canvas.drawText(high, mCenterX - (mCenterX / 2) - mXOffset, mCenterY, mHighPaint);
                 canvas.drawText("max", mCenterX - (mCenterX / 2) - mXOffset - 4, mCenterY + mHighPaint.getTextSize(), mHighTextPaint);
@@ -743,6 +743,7 @@ public class SunshineWatchFace extends CanvasWatchFaceService {
             highTemp = dataSet.getDouble("max");
             lowTemp = dataSet.getDouble("min");
             saveDataSet(dataSet);
+            weatherBitmap = null;
             invalidate();
         }
 
